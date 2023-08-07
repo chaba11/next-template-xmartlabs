@@ -1,4 +1,4 @@
-import { classnames } from 'helpers/utils';
+import { classnames } from '@/helpers/utils';
 import styles from './text-area.module.scss';
 
 export enum TextAreaStatus {

@@ -1,6 +1,8 @@
+'use client';
 import { classnames } from '@/helpers/utils';
 import globalStyles from 'assets/stylesheets/global-styles.module.scss';
 import styles from './page.module.scss';
+import { Button } from '@/common/button';
 
 export default function Home() {
     return (
@@ -12,6 +14,9 @@ export default function Home() {
       <p className={styles.subheader}>
         Feel free to spruce me up 😊
       </p>
+      <Button onClick={() => {throw new Error('A')}}>
+        Testing button
+      </Button>
     </div>
   </div>
     )

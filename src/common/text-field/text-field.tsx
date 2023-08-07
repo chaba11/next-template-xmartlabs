@@ -1,5 +1,5 @@
 import React, { HTMLInputTypeAttribute, useRef } from 'react';
-import { classnames } from 'helpers/utils';
+import { classnames } from '@/helpers/utils';
 import styles from './text-field.module.scss';
 
 export enum TextFieldStatus {

@@ -73,7 +73,7 @@ type AvatarProps = React.ImgHTMLAttributes<HTMLImageElement> & {
   iconComponent?: React.ReactNode;
 };
 
-export const Avatar = React.forwardRef<HTMLElement, AvatarProps>(({
+const Avatar = React.forwardRef<HTMLElement, AvatarProps>(({
   crossOrigin, referrerPolicy, src, srcSet, alt, bgColor = '#EE1A64', color = '#FFF', size = 'm', iconComponent, ...props
 }, ref) => {
   const loaded = useLoaded({
@@ -127,4 +127,5 @@ export const Avatar = React.forwardRef<HTMLElement, AvatarProps>(({
       ) : null}
     </div>
   );
-});
+}).displayName = 'Avatar';
+export default Avatar;
