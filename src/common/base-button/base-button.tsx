@@ -1,3 +1,5 @@
+import React from 'react';
+
 export type IProps = React.HTMLProps<HTMLButtonElement> & {
   type?: 'button' | 'submit' | 'reset';
 };

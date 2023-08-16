@@ -3,8 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { classnames } from '@/helpers/utils';
 import { Sizes } from '@/common/types';
 import avatarStyles from './avatar.module.scss';
-import { ReactComponent as AvatarSVG } from './assets/user.svg';
-import Image from 'next/image';
+import AvatarSVG from './assets/user.svg';
 
 type ImageProps = {
   crossOrigin?: string;
@@ -86,9 +85,8 @@ const Avatar = React.forwardRef<HTMLElement, AvatarProps>(({
 
   if (hasImgNotFailing) {
     children = (
-      <Image
+      <img
         src={src}
-        srcSet={srcSet}
         alt={alt}
         crossOrigin={crossOrigin}
         referrerPolicy={referrerPolicy}
@@ -127,5 +125,6 @@ const Avatar = React.forwardRef<HTMLElement, AvatarProps>(({
       ) : null}
     </div>
   );
-}).displayName = 'Avatar';
-export default Avatar;
+});
+Avatar.displayName = 'Avatar';
+export { Avatar };

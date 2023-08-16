@@ -14,9 +14,6 @@ export default function Home() {
       <p className={styles.subheader}>
         Feel free to spruce me up 😊
       </p>
-      <Button onClick={() => {throw new Error('A')}}>
-        Testing button
-      </Button>
     </div>
   </div>
     )

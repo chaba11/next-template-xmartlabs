@@ -1,7 +1,7 @@
-import { classnames } from 'helpers/utils';
-import { ReactComponent as CloseSVG } from 'assets/icons/close.svg';
+import { classnames } from '@/helpers/utils';
+import CloseSVG from 'assets/icons/close.svg';
 import badgeStyles from './badge.module.scss';
-import globalStyles from '../../assets/stylesheets/global-styles.module.scss';
+import globalStyles from 'assets/stylesheets/global-styles.module.scss';
 
 type IProps = React.HTMLProps<HTMLDivElement> & {
   closeable?: boolean;
